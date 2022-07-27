@@ -10,54 +10,69 @@
 </head>
 
 <body>
+
+    <h3>This is not a real online service. None of the information entered
+        here will be stored
+    </h3>
+
     <div class="signup-container">
-    <p>Sign Up With</p>
+        <p>SIGN UP WITH</p>
 
-    <div class="socials-container">
-        <button>Google</button>
-        <button>Github</button>
-        <button>Twitter</button>
+        <div class="socials-container">
+            <button class="social">Google</button>
+            <button class="social">Github</button>
+            <button class="social">Twitter</button>
+        </div>
+
+        <hr><p id="or">OR</p>
+
+        <form action="#">
+
+            <div class="input-container">
+                <div>
+                    <label for="firstname">FIRST NAME</label>
+                    <input type="text" name="firstname" id="firstname" required>
+                </div>
+
+                <div class="lastname-container">
+                    <label for="lastname">LAST NAME</label>
+                    <input type="text" name="lastname" id="lastname" required>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <div>
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+                <div>
+                    <label for="phone">PHONE NUMBER</label>
+                    <input type="tel" name="phone_num" id="phone">
+                </div>
+            </div>
+
+            <div class="input-container">
+                <div>
+                    <label for="password">PASSWORD</label>
+                    <input type="password" name="user_pass" id="password" required>
+                </div>
+
+                <div class="confirmpass-container">CONFIRM PASSWORD</label>
+                    <input type="password" name="confirm_pass" id="confirm" required>
+                </div>
+            </div>
+
+            <div>
+                <button type="submit">Create Account</button>
+            </div>
+
+            <div class="has-login">
+                <p>Already have an account? Click here to <a href="">Log In</a></p>
+            </div>
+        </form>
+
     </div>
-
-    <p>Or</p>
-
-    <form action="#">
-
-        <div>
-            <label for="firstname">First Name</label>
-            <input type="text" name="firstname" id="firstname" required>
-
-            <label for="lastname">Last Name</label>
-            <input type="text" name="lastname" id="lastname" required>
-        </div>
-
-        <div>
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id="email" required>
-
-            <label for="phone">Phone Number</label>
-            <input type="tel" name="phone_num" id="phone">
-        </div>
-
-        <div>
-            <label for="password">Password</label>
-            <input type="password" name="user_pass" id="password" required>
-
-            <label for="confirm">Confirm Password</label>
-            <input type="password" name="confirm_pass" id="confirm" required>
-
-        </div>
-
-        <div>
-            <button type="submit">Create Account</button>
-        </div>
-
-        <div class="has-login">
-            <p>Already have an account? Click here to <a href="">Log In</a></p>
-        </div>
-    </form>
-
-</div>
 
 </body>
 

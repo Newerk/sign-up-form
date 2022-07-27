@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=IBM+Plex+Sans:ital,wght@0,200;0,600;1,100&display=swap');
+
+html {
+    font-family: 'Baloo 2', cursive;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+h3 {
+    color: red;
+}
+
+h3::after {
+    content: url("img/alert-circle.svg");
+    position: relative;
+    top: .3rem;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-container,
+.socials-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button[class="social"] {
+    width: 28rem;
+}
+
+
+#or::before,
+#or::after {
+    content: "";
+
+}
+
+.signup-container {
+    border: 1px solid black;
+    width: 30rem;
+
+}
+
+input,
+label {
+    display: block;
+}
+
+.input-container {
+    display: flex;
+    gap: 20px;
+}
