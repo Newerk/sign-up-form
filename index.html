@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,64 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <p>Sign Up With</p>
+
+    <div class="socials">
+        <ul>
+            <li>
+                <button>Google</button>
+            </li>
+
+            <li>
+                <button>Github</button>
+            </li>
+
+            <li>
+                <button>Twitter</button>
+            </li>
+        </ul>
+    </div>
+
+    <p>Or</p>
+
+    <form action="#">
+
+        <div>
+            <label for="firstname">First Name</label>
+            <input type="text" name="firstname" id="firstname" required>
+
+            <label for="lastname">Last Name</label>
+            <input type="text" name="lastname" id="lastname" required>
+        </div>
+
+        <div>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="phone_num" id="phone">
+        </div>
+
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="user_pass" id="password" required>
+
+            <label for="confirm">Confirm Password</label>
+            <input type="password" name="confirm_pass" id="confirm" required>
+
+        </div>
+
+        <div>
+            <button type="submit">Create Account</button>
+        </div>
+
+        <div class="has-login">
+            <p>Already have an account? Click here to <a href="">Log In</a></p>
+        </div>
+    </form>
+
 </body>
+
 </html>
