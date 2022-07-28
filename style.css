@@ -116,11 +116,6 @@ body {
     margin-top: 2rem;
 }
 
-#or::before,
-#or::after {
-    content: "";
-
-}
 
 .form-container {
     margin-top: var(--header-height);
@@ -213,7 +208,7 @@ p {
 
 img {
     position: absolute;
-    left: 5vw;
+    left: 3vw;
     width:100%;
     max-width: 2.3vw;
 }
