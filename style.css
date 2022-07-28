@@ -23,7 +23,6 @@ html {
     font-family: 'IBM Plex Sans', sans-serif;
     display: flex;
     flex-direction: column;
-    overflow-y: hidden;
     overflow-x: hidden;
 
 }
