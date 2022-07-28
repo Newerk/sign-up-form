@@ -10,61 +10,80 @@
 </head>
 
 <body>
+    <div class="header">
+        <h3>This is not a real online service. None of the information entered
+            here will be stored
+        </h3>
+    </div>
 
-    <h3>This is not a real online service. None of the information entered
-        here will be stored
-    </h3>
+    <div class="form-container">
+        <div class="signup-container">
 
-    <div class="signup-container">
-        <p>SIGN UP WITH</p>
+            <p>SIGN UP WITH</p>
 
-        <div class="socials-container">
-            <button class="social">Google</button>
-            <button class="social">Github</button>
-            <button class="social">Twitter</button>
+            <div class="socials-container">
+                <button class="social" id="google">
+                    <img id="g-icon" src="img/google-g-2015-logo-svg-vector.svg" alt="google logo">
+                    Google
+                </button>
+                <button class="social" id="github">
+                    <img id="g-icon" src="img/github-logo.svg" alt="google logo">
+                    Github</button>
+                <button class="social" id="twitter">
+                    <img id="g-icon" src="img/twitter-logo-white.svg" alt="google logo">
+                    Twitter</button>
+            </div>
         </div>
 
-        <hr><p id="or">OR</p>
+        <p id="or">OR</p>
 
         <form action="#">
 
             <div class="input-container">
                 <div>
-                    <label for="firstname">FIRST NAME</label>
+                    <label for="firstname"><span aria-label="*">*</span> FIRST NAME</label>
                     <input type="text" name="firstname" id="firstname" required>
                 </div>
 
                 <div class="lastname-container">
-                    <label for="lastname">LAST NAME</label>
+                    <label for="lastname"><span aria-label="*">*</span> LAST NAME</label>
                     <input type="text" name="lastname" id="lastname" required>
                 </div>
             </div>
 
             <div class="input-container">
                 <div>
-                    <label for="email">EMAIL</label>
+                    <label for="email"><span aria-label="*">*</span> EMAIL</label>
                     <input type="email" name="email" id="email" required>
                 </div>
 
                 <div>
-                    <label for="phone">PHONE NUMBER</label>
-                    <input type="tel" name="phone_num" id="phone">
+                    <label for="phone"><span aria-label="*">*</span> PHONE NUMBER</label>
+                    <input type="tel" name="phone_num" id="phone" minlength="10" maxlength="10"
+                        pattern="^(\d{10}|\d{3}(-|\s|\.)\d{3}(-|\s|\.)\d{4})$|^\d{10}$" required>
                 </div>
             </div>
 
             <div class="input-container">
                 <div>
-                    <label for="password">PASSWORD</label>
-                    <input type="password" name="user_pass" id="password" required>
+                    <label for="password"><span aria-label="*">*</span> PASSWORD</label>
+                    <input type="password" name="user_pass" id="password"
+                        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$" required>
+                        <div id="pwd-text">
+                            Password should contain a minimum eight characters, at least one uppercase letter, one lowercase letter
+                            and one number:
+                        </div>
                 </div>
 
-                <div class="confirmpass-container">CONFIRM PASSWORD</label>
+                <div>
+                    <label for="confirm"><span aria-label="*">*</span> CONFIRM PASSWORD</label>
                     <input type="password" name="confirm_pass" id="confirm" required>
                 </div>
             </div>
 
+
             <div>
-                <button type="submit">Create Account</button>
+                <button type="submit">Create My Account</button>
             </div>
 
             <div class="has-login">

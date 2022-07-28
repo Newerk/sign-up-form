@@ -1,12 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=IBM+Plex+Sans:ital,wght@0,200;0,600;1,100&display=swap');
 
+/*button style reset*/
+button,
+input[type="submit"],
+input[type="reset"] {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+:root{
+    --header-height: 5vh;
+    --form-width: 55vw;
+}
+
 html {
     font-family: 'Baloo 2', cursive;
     font-family: 'IBM Plex Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+}
+
+.header {
+    color: red;
+    background-color: antiquewhite;
+    width: 100%;
+    height: var(--header-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    
 }
 
 h3 {
-    color: red;
+    margin-top: 0.7rem;
 }
 
 h3::after {
@@ -17,24 +52,70 @@ h3::after {
 }
 
 body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    background: url("img/Docking\ Area.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: 5vw; */
 }
 
-.signup-container,
+
 .socials-container {
+    gap: .3rem;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-
-button[class="social"] {
-    width: 28rem;
+.socials-container>button {
+    border-radius: 3px;
 }
 
+.social {
+    width: 50vw;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+#google {
+    background-color: #de5246;
+    color: white;
+
+}
+#google:hover{
+    background-color: #c23124;
+
+}
+
+#github {
+    background-color: rgb(40, 40, 40);
+
+    color: white;
+}
+#github:hover{
+    background-color: black;
+
+}
+
+#twitter {
+    background-color: #1DA1F2;
+    color: white;
+
+}
+#twitter:hover{
+    background-color: #0084ff;
+
+}
+
+#or {
+    margin-top: 2rem;
+}
 
 #or::before,
 #or::after {
@@ -42,18 +123,98 @@ button[class="social"] {
 
 }
 
-.signup-container {
-    border: 1px solid black;
-    width: 30rem;
+.form-container {
+    margin-top: var(--header-height);
+    width: var(--form-width);
+    height: 100vh;
+    background-color: aliceblue;
 
 }
 
+form {
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+
+}
 input,
 label {
     display: block;
 }
 
+input {
+    width: 20vw;
+    height: 4vh;
+    border-radius: 3px;
+    border: 1px solid rgb(105, 105, 105);
+    padding-left: 1rem;
+    outline: none;
+
+}
+
+#pwd-text {
+    width: 20vw;
+    font-style: italic;
+    font-size: smaller;
+
+
+}
+
+input:hover {
+    border: 1px solid rgb(129, 199, 156);
+}
+
+input:valid {
+    border: 2px solid rgb(85, 220, 137);
+}
+
+input:focus:invalid {
+    border: 2px solid rgb(220, 103, 85);
+
+
+}
+
+label{
+    margin-top: .5rem;
+
+}
 .input-container {
     display: flex;
-    gap: 20px;
+    gap: 5rem;
+}
+
+button[type="submit"] {
+    height: 6vh;
+    background-color: #08F001;
+    padding: 0 2rem;
+    margin-top: 4rem;
+    border-radius: 3px;
+    font-weight: bold;
+}
+button[type="submit"]:hover{
+    background-color: #35e200;
+
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space:pre;
+
+}
+
+.has-login {
+    width: var(--form-width);
+    height: var(--header-height);
+    position: fixed;
+    bottom: .5rem;
+}
+
+img {
+    position: absolute;
+    left: 5vw;
+    width:100%;
+    max-width: 2.3vw;
 }
